@@ -6,6 +6,8 @@
 ![Status](https://img.shields.io/badge/Type-Research_Project-red)
 
 
+A complete academic simulation framework for Physical Layer Security (PHYSEC), integrating information theory, channel coding, modulation, and MIMO beamforming techniques. This project models a wireless communication scenario (Alice → Bob / Eve) and evaluates secrecy via entropy analysis, CRC-24 validation, Hamming(12,8) error correction, 64-QAM modulation, AWGN and 3×3 MIMO channels, eigenvector-based beamforming, and SVD-based secrecy capacity. Includes PER curves, secrecy thresholds, and full pipeline simulation.
+
 
 ```mermaid
 flowchart LR
