@@ -6,6 +6,36 @@
 ![Status](https://img.shields.io/badge/Type-Research_Project-red)
 
 
+
+```mermaid
+flowchart LR
+
+    A["Message Source / Entropy Analysis"] --> B["CRC-24 Encoding"]
+    B --> C["Hamming 12-8 Encoding"]
+    C --> D["64-QAM Modulation"]
+
+    D --> E["Bob Channel (AWGN)"]
+    D --> F["Eve Channel (AWGN - 4 dB)"]
+
+    E --> G["QAM Demodulation"]
+    F --> H["QAM Demodulation"]
+
+    G --> I["Hamming Decoding"]
+    H --> J["Hamming Decoding"]
+
+    I --> K["CRC Verification"]
+    J --> L["CRC Verification"]
+
+    K --> M["Recovered Message (Bob)"]
+    L --> N["Recovered Message (Eve)"]
+
+    D --> O["MIMO 3x3 Channel + Beamforming"]
+    O --> P["Equalization + Demodulation"]
+
+```
+
+
+
 ```
 physical-layer-security/
 │
